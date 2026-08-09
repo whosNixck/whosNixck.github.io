@@ -1,1 +1,314 @@
-<h1>Diese Page ist noch in Bearbeitung</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nick Rosentreter — Fachinformatiker für Anwendungsentwicklung</title>
+<meta name="description" content="Portfolio von Nick Rosentreter — Fachinformatiker für Anwendungsentwicklung. C#/.NET, Web-Entwicklung, APIs, erste Schritte in KI.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-grid"></div>
+
+<header id="header">
+  <nav>
+    <div class="brand">
+      <a href="#home" class="logo">Nick<span>.</span>Rosentreter</a>
+      <span class="updated-tag" data-i18n="site.lastUpdated">Aktualisiert: 9. August 2026</span>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">Über mich</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#timeline" data-i18n="nav.timeline">Werdegang</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projekte</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Sprache wählen">
+        <span class="lang-slider" id="langSlider"></span>
+        <button type="button" class="lang-btn active" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="dot"></span><span data-i18n="hero.badge">Offen für neue Herausforderungen</span></span>
+        <h1><span data-i18n="hero.titleLine1">Fachinformatiker für</span><br><span class="grad" data-i18n="hero.titleLine2">Anwendungsentwicklung</span></h1>
+        <p class="lead" data-i18n="hero.description">Ich bin Nick — ich baue Backends, Integrationen und APIs mit C#/.NET, finde
+          mich zunehmend in modernem Web (React/Node.js) zurecht und lerne KI vor allem per
+          Learning-by-Doing. Aktuell auf der Suche nach meiner nächsten Stelle als
+          Anwendungsentwickler.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Projekte ansehen</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">Kontakt aufnehmen</a>
+        </div>
+      </div>
+      <img class="hero-avatar" src="https://github.com/whosNixck.png" alt="Nick Rosentreter" loading="lazy" width="200" height="200">
+    </div>
+    <div class="hero-scroll"><span class="line"></span><span data-i18n="hero.scrollHint">SCROLL</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="about.sectionLabel">Über mich</span>
+        <h2 data-i18n="about.title">Vom Azubi zum API-Entwickler</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p data-i18n-html="about.trainingParagraph">2026 habe ich meine Ausbildung zum <strong>Fachinformatiker für
+            Anwendungsentwicklung</strong> bei ORGADATA (Teil der Forterro-Gruppe) erfolgreich
+            abgeschlossen — inklusive einer unternehmenseigenen Academy mit Delphi- und
+            C#-Kursen, Stationen im ERP- und API-Team und Mitarbeit an Backend-Architekturen
+            für Partnerprojekte.</p>
+          <p data-i18n-html="about.aiParagraph">Nebenbei bringe ich mir <strong>KI und agentische Systeme</strong> vor allem
+            im Learning-by-Doing bei — unterstützt durch Kurse und Fachquellen, wo sie mir weiterhelfen, dieselbe
+            Herangehensweise wie bei meinen Raspberry-Pi- und Arduino-Projekten.</p>
+        </div>
+        <div class="facts reveal">
+          <dl>
+            <dt data-i18n="fact.roleLabel">Rolle</dt><dd data-i18n="fact.roleValue">Fachinformatiker AE</dd>
+            <dt data-i18n="fact.focusLabel">Fokus</dt><dd>C# / .NET · APIs · Web</dd>
+            <hr>
+            <dt data-i18n="fact.trainingLabel">Ausbildung</dt><dd>ORGADATA / Forterro, 2023–2026</dd>
+            <dt data-i18n="fact.certificationLabel">Abschluss</dt><dd>IHK Ostfriesland &amp; Papenburg</dd>
+            <hr>
+            <dt data-i18n="fact.currentLabel">Aktuell</dt><dd data-i18n="fact.currentValue">Aktive Jobsuche als Anwendungsentwickler</dd>
+            <dt data-i18n="fact.learningLabel">Lernt gerade</dt><dd data-i18n="fact.learningValue">KI-Agenten &amp; Automatisierung</dd>
+            <hr>
+            <dt data-i18n="fact.locationLabel">Standort</dt><dd data-i18n="fact.locationValue">Papenburg, Niedersachsen</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="skills.sectionLabel">Skills</span>
+        <h2 data-i18n="skills.title">Werkzeuge, mit denen ich arbeite</h2>
+        <p data-i18n="skills.description">Chronologisch von den Grundlagen meiner Ausbildung bis zu dem, was ich mir gerade
+          aktuell beibringe.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.groupFundamentals.title">Programmier-Grundlagen</h3>
+          <span class="skill-era" data-i18n="skills.groupFundamentals.era">2021 — 2023, Berufsbildende Schule Papenburg (ITA)</span>
+          <div class="skill" data-level="60"><div class="skill-top"><span>PHP</span><span data-i18n="duration.fundamentals">Grundlagen</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-top"><span>C++</span><span data-i18n="duration.fundamentals">Grundlagen</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.groupTraining.title">Fachinformatiker-Ausbildung</h3>
+          <span class="skill-era" data-i18n="skills.groupTraining.era">2023 — 2026, ORGADATA / Forterro</span>
+          <div class="skill" data-level="100"><div class="skill-top"><span>C#</span><span data-i18n="duration.years5">5+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="80"><div class="skill-top"><span>WPF / Delphi</span><span data-i18n="duration.years3">3+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="60"><div class="skill-top"><span>SQL / MySQL</span><span data-i18n="duration.years2">2+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="60"><div class="skill-top"><span>Blazor / ASP.NET Core</span><span data-i18n="duration.years2">2+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="80"><div class="skill-top"><span>Git / Bitbucket</span><span data-i18n="duration.years3">3+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="80"><div class="skill-top"><span>Scrum / Kanban / JIRA</span><span data-i18n="duration.years3">3+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="80"><div class="skill-top"><span>Confluence</span><span data-i18n="duration.years3">3+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="30"><div class="skill-top"><span>Docker / CI/CD</span><span data-i18n="duration.fundamentals">Grundlagen</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.groupAi.title">KI &amp; Machine Learning</h3>
+          <span class="skill-era" data-i18n="skills.groupAi.era">früher ausprobiert, aktuell kein Schwerpunkt mehr</span>
+          <div class="skill" data-level="40"><div class="skill-top"><span>TensorFlow / PyTorch</span><span data-i18n="duration.earlyExperience">erste Erfahrung</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-top"><span>NumPy / Matplotlib</span><span data-i18n="duration.earlyExperience">erste Erfahrung</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.groupEmbedded.title">Embedded-Elektronik</h3>
+          <span class="skill-era" data-i18n="skills.groupEmbedded.era">Hobby, nebenbei</span>
+          <div class="skill" data-level="55"><div class="skill-top"><span>Raspberry Pi</span><span data-i18n="duration.carProject">eigenes Auto-Projekt</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="45"><div class="skill-top"><span>Arduino</span><span data-i18n="duration.arduinoKit">ELEGOO UNO R3 Kit</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 data-i18n="skills.groupWeb.title">Web &amp; APIs</h3>
+          <span class="skill-era" data-i18n="skills.groupWeb.era">jetzt — bringe ich mir gerade selbst bei</span>
+          <div class="skill" data-level="60"><div class="skill-top"><span>REST / GraphQL</span><span data-i18n="duration.years2">2+ Jahre</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-top"><span>JavaScript / TypeScript</span><span data-i18n="duration.fundamentals">Grundlagen</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-top"><span>React / Node.js</span><span data-i18n="duration.firstHandsOn">erste praktische Erfahrung</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+          <div class="skill" data-level="45"><div class="skill-top"><span>WhatsApp / Spotify / Google API</span><span data-i18n="duration.handsOnExperience">Praxiserfahrung</span></div><div class="bar"><div class="bar-fill"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="timeline.sectionLabel">Werdegang</span>
+        <h2 data-i18n="timeline.title">Meine Station bis hierhin</h2>
+      </div>
+      <div class="timeline" id="timelineList">
+        <div class="timeline-progress" id="timelineProgress"></div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-date" data-i18n="timeline.ita.date">2021 — 2023</span>
+          <h3 data-i18n="timeline.ita.title">Staatlich geprüfter informationstechnischer Assistent</h3>
+          <div class="org" data-i18n="timeline.ita.org">Berufsbildende Schule Papenburg</div>
+          <p class="desc" data-i18n="timeline.ita.description">Grundlagenausbildung in PHP, C++ und SQL — der Einstieg in die
+            Softwareentwicklung.</p>
+          <div class="tl-tags"><span>PHP</span><span>C++</span><span>SQL</span></div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-date" data-i18n="timeline.training.date">2023 — 2026</span>
+          <h3 data-i18n="timeline.training.title">Ausbildung Fachinformatiker für Anwendungsentwicklung</h3>
+          <div class="org" data-i18n="timeline.training.org">ORGADATA Software-Dienstleistungen AG (Forterro-Gruppe)</div>
+          <p class="desc" data-i18n-html="timeline.training.description">20 Monate unternehmenseigene Academy (Delphi &amp; C#), danach Stationen
+            im ERP- und API-Team. Mitarbeit an "MBIOE Wizard", API-V3-Beispielanwendungen und
+            Backend-Architekturen für Project-Center — inkl. Performance-Messungen und
+            technischen Konzepten.</p>
+          <div class="tl-tags"><span>C#</span><span>Delphi</span><span>APIs</span><span>Backend</span></div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-date" data-i18n="timeline.exam.date">Juni 2026</span>
+          <h3 data-i18n="timeline.exam.title">IHK-Abschlussprüfung bestanden</h3>
+          <div class="org" data-i18n="timeline.exam.org">IHK für Ostfriesland und Papenburg</div>
+          <p class="desc" data-i18n="timeline.exam.description">Abschlussarbeit: Import-Funktion für GAEB-3.3-Dateien in LogiKal.
+            Durchgehend positive Zeugnisse — schnelle Auffassungsgabe, eigenständig, hohes
+            Engagement.</p>
+          <div class="tl-tags"><span data-i18n="timeline.exam.tag">Ausbildung abgeschlossen</span></div>
+        </div>
+
+        <div class="tl-item current reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-date" data-i18n="timeline.current.date">Jetzt</span>
+          <h3 data-i18n="timeline.current.title">Auf der Suche nach der nächsten Herausforderung</h3>
+          <div class="org" data-i18n="timeline.current.org">Umkreis &amp; Remote</div>
+          <p class="desc" data-i18n="timeline.current.description">Ich bewerbe mich aktiv als Anwendungsentwickler — nicht nur im
+            C#/.NET-Umfeld, sondern überall dort, wo Softwareentwicklung gefragt ist. Nebenbei
+            vertiefe ich React/Node.js und experimentiere mit KI-Agenten und Automatisierung.</p>
+          <div class="tl-tags"><span data-i18n="timeline.current.tagJobSearch">Jobsuche</span><span data-i18n="timeline.current.tagAiAgents">KI-Agenten</span><span data-i18n="timeline.current.tagAutomation">Automatisierung</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="projects.sectionLabel">Projekte</span>
+        <h2 data-i18n="projects.title">Projekte</h2>
+        <p data-i18n="projects.description">Eigene Tools, die ich in meiner Freizeit gebaut und auf GitHub veröffentlicht habe.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Desktop-AutoCleaner</h3>
+          <span class="card-date" data-i18n="projects.autoCleaner.date">Oktober 2024</span>
+          <p data-i18n="projects.autoCleaner.description">Eines meiner ersten eigenen Projekte, entstanden aus einem ganz alltäglichen
+            Problem: Ordner wie mein Downloads-Ordner werden mit der Zeit viel zu voll und unübersichtlich.
+            Braucht man dann eine Datei, die man sich für später aufgehoben hat, beginnt die mühsame Sucherei.
+            Also habe ich mir dieses Tool gebaut, das genau dabei hilft.</p>
+          <div class="card-tags"><span>Python</span><span data-i18n="projects.licenseMit">MIT-Lizenz</span></div>
+          <a class="card-link" href="https://github.com/whosNixck/Desktop-AutoCleaner" target="_blank" rel="noopener">
+            <span data-i18n="projects.viewOnGithub">Auf GitHub ansehen</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <h3>Port-Killer</h3>
+          <span class="card-date" data-i18n="projects.portKiller.date">März 2026</span>
+          <p data-i18n="projects.portKiller.description">Jeder kennt es: Eine IDE stürzt ab, im Hintergrund laufen die Prozesse aber
+            munter weiter. Die IDE zeigt sie nicht mehr an, und die blockierten Ports müssen mühsam von Hand
+            geschlossen werden. Genau dafür habe ich dieses Tool geschrieben — es findet und beendet die
+            hängengebliebenen Prozesse zuverlässig.</p>
+          <div class="card-tags"><span>PowerShell</span><span data-i18n="projects.licenseMit">MIT-Lizenz</span></div>
+          <a class="card-link" href="https://github.com/whosNixck/Port-Killer" target="_blank" rel="noopener">
+            <span data-i18n="projects.viewOnGithub">Auf GitHub ansehen</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9 6.5h.01"/></svg>
+          </div>
+          <h3>whosNixck.github.io</h3>
+          <span class="card-date" data-i18n="projects.portfolio.date">August 2026</span>
+          <p data-i18n="projects.portfolio.description">Diese Portfolio-Website: Zu jedem Entwickler gehört heutzutage ein Portfolio,
+            das zeigt, welche Fähigkeiten er mitbringt und an welchen Projekten er arbeitet — also habe ich mir
+            mit Hilfe von Claude genau das gebaut. KI ist aus der heutigen Softwareentwicklung nicht mehr
+            wegzudenken, und dieses Projekt war für mich die perfekte Gelegenheit, das Schreiben und Verfeinern
+            von Prompts zu üben — eine Fähigkeit, die in der Anwendungsentwicklung zunehmend an Bedeutung gewinnt.</p>
+          <div class="card-tags"><span>HTML / CSS / JS</span><span data-i18n="projects.portfolio.aiTag">KI-unterstützt</span></div>
+          <a class="card-link" href="https://github.com/whosNixck/whosNixck.github.io" target="_blank" rel="noopener">
+            <span data-i18n="projects.viewOnGithub">Auf GitHub ansehen</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box reveal">
+        <h2 data-i18n="contact.title">Lass uns sprechen</h2>
+        <p data-i18n="contact.description">Ich bin offen für Festanstellungen, Werkstudenten-Rollen oder spannende Projekte als
+          Anwendungsentwickler — unabhängig vom Tech-Stack. Schreib mir einfach.</p>
+        <div class="contact-links">
+          <a href="mailto:n.rosentreter.portfolio@gmail.com" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            <span data-i18n="contact.emailButton">E-Mail schreiben</span>
+          </a>
+          <a href="https://github.com/whosNixck" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5 3.3 9.3 7.9 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12c0-6.3-5.2-11.5-11.5-11.5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/nick-rosentreter/" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21H9z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year"></span> Nick Rosentreter · <span data-i18n="footer.builtWith">gebaut mit HTML, CSS &amp; JS</span> ·
+    <a href="https://github.com/whosNixck/whosNixck.github.io" target="_blank" rel="noopener" data-i18n="footer.sourceCode">Quellcode</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
