@@ -34,7 +34,7 @@ langSwitch.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
 });
 
-fetch('translations.json')
+fetch('translations.json', { cache: 'no-store' })
   .then(res => res.json())
   .then(data => {
     translations = data;
